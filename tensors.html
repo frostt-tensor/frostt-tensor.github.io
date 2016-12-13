@@ -1,0 +1,21 @@
+---
+title: Tensors
+type: page
+---
+
+<p> Tensors </p>
+
+<table>
+<thead style="background-color:#7a0019;color:#ffcc33">
+<tr>
+  <td>Name</td>
+  <td>Non-zeros</td>
+</tr>
+</thead>
+{% for tensor in site.tensors %}
+<tr>
+  <td> <a href="{{tensor.url}}">{{ tensor.name }}</a> </td>
+  <td> {{ tensor.nnz }} </td>
+</tr>
+{% endfor %}
+</table>
