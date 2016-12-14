@@ -13,7 +13,11 @@ title: Tensors
 </thead>
 {% for tensor in site.tensors %}
 <tr>
-  <td> <a href="{{tensor.url}}">{{ tensor.name }}</a> </td>
+  <td>
+    <a href="{{tensor.url}}">
+      {%if tensor.name %} {{tensor.name}} {%else%} {{ tensor.title}} {%endif%}
+    </a>
+  </td>
   <td> {{ tensor.nnz }} </td>
 </tr>
 {% endfor %}
