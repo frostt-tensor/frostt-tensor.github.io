@@ -36,4 +36,6 @@ defaults:
 navbar-links:
   about: "about"
   tensors: "tensors"
+  contributing: "contributing"
+
 rss: false

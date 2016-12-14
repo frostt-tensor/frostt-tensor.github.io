@@ -4,13 +4,25 @@ layout: default
 
 <h1> {{ page.title }} </h1>
 
-<h2>Dataset Description</h2>
+<h2>Tensor Description</h2>
 <p> {{ page.description }} </p>
 
 
-<h2>Dataset Statistics</h2>
+<h2>Tensor Statistics</h2>
 
 <table class="tensor-stats">
+  <tr>
+    <td> non-zeros </td>
+    <td> {{ page.nnz }} </td>
+  </tr>
+  <tr>
+    <td> order </td>
+    <td> {{ page.order }} </td>
+  </tr>
+  <tr>
+    <td> dimension </td>
+    <td> {{ page.dims }} </td>
+  </tr>
   {% for prop in page.stats %}
   <tr>
     <td> {{ prop[0] }} </td>
@@ -19,7 +31,7 @@ layout: default
   {% endfor %}
 </table>
 
-<h2>Files</h2>
+<h2>Downloadable Files</h2>
 <table class="tensor-files">
   {% for file in page.files %}
   <tr>
@@ -30,11 +42,9 @@ layout: default
   {% endfor %}
 </table>
 
-
-
-{% if page.cite %}
+{% if page.citation %}
   <h2>Citation</h2>
-  <pre>{{ page.cite }}</pre>
+  <pre>{{ page.citation }}</pre>
 {% endif %}
 
 {{ content }}
