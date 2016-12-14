@@ -16,12 +16,17 @@ files:
   - [Binary, "http://www-users.cs.umn.edu/~shaden/sc16/datasets/outpatient3_train.bin"]
 
 cite: |
-  @article{smith2015splatt,
-    title={{SPLATT}: Efficient and parallel sparse tensor-matrix multiplication},
-    author={Shaden Smith and Ravindran, Niranjay and Sidiropoulos, Nicholas D and Karypis, George},
-    journal={29th IEEE International Parallel \& Distributed Processing Symposium},
-    year={2015}
+  @article{harper2016movielens,
+    title={The movielens datasets: History and context},
+    author={Harper, F Maxwell and Konstan, Joseph A},
+    journal={ACM Transactions on Interactive Intelligent Systems (TiiS)},
+    volume={5},
+    number={4},
+    pages={19},
+    year={2016},
+    publisher={ACM}
   }
+
 
 categories: [ratings, movielens]
 ---
