@@ -4,7 +4,7 @@ title: Movielens-20M
 description: >
   Movie ratings from <a href="https://movielens.org">Movielens</a>. The modes
   represent <em>user</em>-<em>movie</em>-<em>time</em>, where time is at the
-  granularity of days.  Each tensor non-zero is a rating provided by a real
+  granularity of week. Each tensor non-zero is a rating provided by a real
   user on the scale of zero to five.
 
 nnz: "20,000,263"

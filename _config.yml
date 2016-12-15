@@ -1,10 +1,8 @@
 
-title: SLOTH
-email: shaden@cs.umn.edu
-description: The Surprisingly Large Open Tensor Hub
+title: FROSTT
+description: The Formidable Repository of Open Sparse Tensors and Tools
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  ShadenSmith
 
 # Build settings
 markdown: kramdown
@@ -21,7 +19,6 @@ collections:
     output: true
     permalink: /tensors/:path/
 
-
 defaults:
   - scope:
       path: ""
@@ -32,12 +29,28 @@ defaults:
       type: "tensors"
     values:
       layout: "tensor_layout"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "posts"
+      comments: false
+      social-share: false
 
 navbar-links:
   about: "about"
+  news: "news"
   tensors:
     - collection: "tensors/index.html"
     - file formats: "tensors/file-formats"
+  tools:
+    - splatt: "http://shaden.io/splatt.html"
   contributing: "contributing"
 
 rss: false
+
+author:
+  name: Shaden Smith
+  email: shaden@cs.umn.edu
+  github: ShadenSmith
+

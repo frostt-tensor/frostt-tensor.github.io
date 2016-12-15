@@ -4,34 +4,33 @@ layout: default
 
 <h1> {{ page.title }} </h1>
 
-<h2>Tensor Description</h2>
 <p> {{ page.description }} </p>
 
 
-<h2>Tensor Statistics</h2>
+<h3>Tensor Statistics</h3>
 
 <table class="tensor-stats">
   <tr>
     <td> Non-zeros </td>
-    <td> {{ page.nnz }} </td>
+    <td style="text-align:right"> {{ page.nnz }} </td>
   </tr>
   <tr>
     <td> Order </td>
-    <td> {{ page.order }} </td>
+    <td style="text-align:right"> {{ page.order }} </td>
   </tr>
   <tr>
     <td> Dimensions </td>
-    <td> {{ page.dims | join: " x " }} </td>
+    <td style="text-align:right"> {{ page.dims | join: " x " }} </td>
   </tr>
   {% for prop in page.stats %}
   <tr>
     <td> {{ prop[0] }} </td>
-    <td> {{ prop[1]}} </td>
+    <td style="text-align:right"> {{ prop[1]}} </td>
   </tr>
   {% endfor %}
 </table>
 
-<h2>Downloadable Files</h2>
+<h3>Downloadable Files</h3>
 <table class="tensor-files">
   <tr>
     <th>Type</th>
@@ -50,7 +49,7 @@ layout: default
 
 
 {% if page.citation %}
-  <h2>Citation</h2>
+  <h3>Citation</h3>
   <pre>{{ page.citation }}</pre>
 {% endif %}
 

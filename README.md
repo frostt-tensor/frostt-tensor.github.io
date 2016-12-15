@@ -1,5 +1,5 @@
-# SLOTH
-The Surprisingly Large Open Tensor Hub
+# FROSTT
+The Formidable Repository of Open Sparse Tensors and Tools
 
 ## Project structure
 

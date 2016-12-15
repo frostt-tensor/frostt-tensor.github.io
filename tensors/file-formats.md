@@ -2,7 +2,7 @@
 title: File formats
 ---
 
-# SLOTH file formats
+# FROSTT file formats
 
 We provide two file formats for tensors.
 
