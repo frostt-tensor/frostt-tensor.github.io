@@ -1,5 +1,6 @@
 ---
 title: News
+permalink: /news/
 ---
 
 # Recent News

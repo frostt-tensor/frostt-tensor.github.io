@@ -37,6 +37,8 @@ defaults:
       comments: false
       social-share: false
 
+include: ["_pages"]
+
 navbar-links:
   about: "about"
   news: "news"

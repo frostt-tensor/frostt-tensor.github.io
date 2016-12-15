@@ -6,17 +6,17 @@ github: "https://github.com/ShadenSmith/tensors"
 ---
 
 
-<h1> Contributing to FROSTT </h1>
+# Contributing to FROSTT
 FROSTT is an open source project that thrives off community contributions. If
 you have a tensor that you would like to see in this collection, please
 consider sharing with us.
 
-<h2> Tensor Submission </h2>
+## Tensor Submission
 We actively seek out new tensors.
-You <strong>must</strong> have the rights to distribute the data. By sharing your
+You **must** have the rights to distribute the data. By sharing your
 dataset, you acknowledge that will become publicly available.
 
-<h2> Development </h2>
+## Development
 Want to contribute to the development of this site or its associated tools?
-Great! All development is conducted on <a href={{page.github}}>Github</a>. Feel
-free to file an issue or submit a pull request.
+Great! All development is conducted on [Github]({{page.github}}). Feel free to
+file an issue or submit a pull request.
