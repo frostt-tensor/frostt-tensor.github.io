@@ -12,16 +12,16 @@ layout: default
 
 <table class="tensor-stats">
   <tr>
-    <td> non-zeros </td>
+    <td> Non-zeros </td>
     <td> {{ page.nnz }} </td>
   </tr>
   <tr>
-    <td> order </td>
+    <td> Order </td>
     <td> {{ page.order }} </td>
   </tr>
   <tr>
-    <td> dimensions </td>
-    <td> {{ page.dims }} </td>
+    <td> Dimensions </td>
+    <td> {{ page.dims | join: " x " }} </td>
   </tr>
   {% for prop in page.stats %}
   <tr>
@@ -33,15 +33,20 @@ layout: default
 
 <h2>Downloadable Files</h2>
 <table class="tensor-files">
+  <tr>
+    <th>Type</th>
+    <th>File</th>
+    <th>Description</th>
+  </tr>
   {% for file in page.files %}
   <tr>
     <td> {{ file[0] }} </td>
     {% assign fname = file[1] | split: "/" %}
     <td> <a href="{{file[1]}}">{{ fname.last }}</a></td>
+    <td> {{ file[2] }} </td>
   </tr>
   {% endfor %}
 </table>
-Check out our page on <a href="/tensors/files.html">file formats</a>.
 
 
 {% if page.citation %}

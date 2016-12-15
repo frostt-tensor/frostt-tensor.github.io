@@ -35,7 +35,9 @@ defaults:
 
 navbar-links:
   about: "about"
-  tensors: "tensors"
+  tensors:
+    - collection: "tensors/index.html"
+    - file formats: "tensors/file-formats"
   contributing: "contributing"
 
 rss: false

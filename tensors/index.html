@@ -2,24 +2,24 @@
 title: Tensors
 ---
 
-<p> Tensors </p>
+<h1> Tensors </h1>
 
 <table>
-<thead>
-<tr>
-  <td>Name</td>
-  <td>Non-zeros</td>
-</tr>
-</thead>
-{% for tensor in site.tensors %}
-<tr>
-  <td>
-    <a href="{{tensor.url}}">
-      {%if tensor.name %} {{tensor.name}} {%else%} {{ tensor.title}} {%endif%}
-    </a>
-  </td>
-  <td> {{ tensor.nnz }} </td>
-</tr>
-{% endfor %}
+  <tr>
+    <th>Name</th>
+    <th>Non-zeros</th>
+    <th>Order</th>
+  </tr>
+  {% for tensor in site.tensors %}
+  <tr>
+    <td style="text-align:left">
+      <a href="{{tensor.url}}">
+        {%if tensor.name %} {{tensor.name}} {%else%} {{ tensor.title}} {%endif%}
+      </a>
+    </td>
+    <td style="text-align:right"> {{ tensor.nnz }} </td>
+    <td style="text-align:right"> {{ tensor.order }} </td>
+  </tr>
+  {% endfor %}
 </table>
 

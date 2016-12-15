@@ -7,9 +7,9 @@ description: >
   granularity of days.  Each tensor non-zero is a rating provided by a real
   user on the scale of zero to five.
 
-nnz: "20,000,000"
+nnz: "20,000,263"
 order: 3
-dims: 10x3x5
+dims: ["138,493", "26,744", "234"]
 
 stats:
 
