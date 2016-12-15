@@ -2,7 +2,7 @@
 title: FROSTT
 description: The Formidable Repository of Open Sparse Tensors and Tools
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
