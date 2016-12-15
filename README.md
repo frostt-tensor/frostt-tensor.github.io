@@ -28,6 +28,6 @@ need to kill and restart the `jekyll build` command.
 
 ## Contributing
 Pull requests and issues are encouraged. To make a contribution, just fork this
-repository, create a _descriptive_ branch, and issue a pull request through
-Github when prepared.
+repository, create a branch (with a descriptive name, _please_), and issue a
+pull request through Github when prepared.
 
