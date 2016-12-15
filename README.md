@@ -1,6 +1,7 @@
 # FROSTT
 The Formidable Repository of Open Sparse Tensors and Tools.
 
+
 ## Project structure
 The FROSTT website is written with [Jekyll](http://jekyllrb.com/) and has the
 following project structure:
@@ -28,6 +29,6 @@ need to kill and restart the `jekyll build` command.
 
 ## Contributing
 Pull requests and issues are encouraged. To make a contribution, just fork this
-repository, create a branch (with a descriptive name, _please_), and issue a
-pull request through Github when prepared.
+repository, create a branch (with a descriptive name, please!), and issue a
+pull request through Github when ready.
 
