@@ -14,8 +14,7 @@ dims: ["138,493", "26,744", "234"]
 stats:
 
 files:
-  - [Text, "http://www-users.cs.umn.edu/~shaden/sc16/datasets/outpatient3_train.tns"]
-  - [Binary, "http://www-users.cs.umn.edu/~shaden/sc16/datasets/outpatient3_train.bin"]
+  - [Tensor, "http://www-users.cs.umn.edu/~shaden/sc16/datasets/outpatient3_train.tns"]
 
 citation: |
   @article{harper2016movielens,
