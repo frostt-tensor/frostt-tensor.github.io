@@ -16,6 +16,7 @@ the last entry provides the non-zero value. Indices start from one.
 #### Example
 This is a fourth-order tensor with five non-zeros:
 
+    # This is a comment
     1 1 1 1 1.0
     1 1 2 1 2.0
     2 2 2 1 3.0

@@ -10,13 +10,12 @@ order: 3
 dims: ["12,092", "9,184", "28,818"]
 
 files:
-  - [Tensor, "http://www-users.cs.umn.edu/~shaden/sc16/datasets/nell-2.tns"]
+  - [Tensor, "http://www-users.cs.umn.edu/~shaden/frostt_data/nell-2.tns.gz"]
 
 citation: |
   @inproceedings{carlson2010toward,
     title={Toward an Architecture for Never-Ending Language Learning.},
-    author={Carlson, Andrew and Betteridge, Justin and Kisiel, Bryan and
-      Settles, Burr and Hruschka Jr, Estevam R and Mitchell, Tom M},
+    author={Carlson, Andrew and Betteridge, Justin and Kisiel, Bryan and Settles, Burr and Hruschka Jr, Estevam R and Mitchell, Tom M},
     booktitle={AAAI},
     volume={5},
     pages={3},

@@ -8,6 +8,10 @@ description: >
   in a given review. We pre-processed the review text by removing stop
   words and performing Porter stemming.
 
+
+  Please note that we no longer have the mappings for this dataset. It is
+  provided as a peformance benchmark.
+
 nnz: "1,741,809,018"
 order: 3
 dims: ["4,821,207", "1,774,269", "1,805,187"]
