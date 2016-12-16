@@ -27,5 +27,6 @@ citation: |
     publisher={ACM}
   }
 
-categories: [ratings, movielens]
+
+tags: [ml20m]
 ---

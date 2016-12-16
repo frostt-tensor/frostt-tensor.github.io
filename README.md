@@ -17,10 +17,11 @@ frostt/
 
 ## Building
 You can build and serve FROSTT for local development:
-
-    $ bundle install
-    $ jekyll serve --watch --detach
-    $ jekyll build --watch
+```
+$ bundle install
+$ jekyll serve --watch --detach
+$ jekyll build --watch
+```
 
 Then just point your browser to [localhost:4000](localhost:4000). You can edit
 any files and simply refresh the page. However, if you edit `_config.yml`, you

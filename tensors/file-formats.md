@@ -14,12 +14,13 @@ first *M* entries specify the indices (or, coordinates) of the non-zero, and
 the last entry provides the non-zero value. Indices start from one.
 
 #### Example
-This is an order-4 tensor with 4 non-zeros:
+This is a fourth-order tensor with five non-zeros:
 
     1 1 1 1 1.0
     1 1 2 1 2.0
     2 2 2 1 3.0
     2 3 1 2 4.0
+    3 1 1 2 5.0
 
 
 ### Mode mappings (.map)

@@ -4,22 +4,34 @@ title: The Tensor Repository
 
 <h1> Tensors </h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Non-zeros</th>
-    <th>Order</th>
-  </tr>
-  {% for tensor in site.tensors %}
-  <tr>
-    <td style="text-align:left">
-      <a href="{{tensor.url}}">
-        {%if tensor.name %} {{tensor.name}} {%else%} {{ tensor.title}} {%endif%}
-      </a>
-    </td>
-    <td style="text-align:right"> {{ tensor.nnz }} </td>
-    <td style="text-align:right"> {{ tensor.order }} </td>
-  </tr>
+<!-- Generate tag list -->
+{% assign tensor_tags = "" %}
+{% for tensor in site.tensors %}
+  {% for tag in tensor.tags %}
+    {% assign tensor_tags = tensor_tags | append: tag | append: "|" %}
   {% endfor %}
-</table>
+{% endfor %}
+{% assign tensor_tags = (tensor_tags | split: "|" | uniq | sort) %}
+
+<!-- Make a link to each tag-specific table. -->
+<p>
+Skip to:
+{% for tag in tensor_tags %}
+  <a href="#tbl_{{tag}}">{{ tag }}</a>
+{% endfor %}
+</p>
+
+
+<h2> All tensors </h2>
+{% include tensor_table.html tbl_name="all" datasets=site.tensors %}
+
+
+<!-- Tag-specific tables -->
+{% for tag in tensor_tags %}
+  <h3>{{tag}}</h3>
+  {% assign tbl_name = "tbl_" | append: tag %}
+  {% assign current_tensors = (site.tensors | where_exp:"tt", "tt.tags contains tag") %}
+  {% include tensor_table.html tbl_id=tbl_name datasets=current_tensors %}
+{% endfor %}
+
 

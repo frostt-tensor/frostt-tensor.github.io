@@ -27,5 +27,5 @@ citation: |
     organization={ACM}
   }
 
-categories: [review, amazon]
+tags: [review, amazon]
 ---

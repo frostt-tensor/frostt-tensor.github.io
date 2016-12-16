@@ -25,5 +25,5 @@ citation: |
   }
 
 
-categories: [nell, knowledge]
+tags: [nell,knowledge]
 ---

@@ -1,0 +1,17 @@
+<table id="{{ include.tbl_id }}">
+  <tr>
+    <th>Name</th>
+    <th>Non-zeros</th>
+    <th>Order</th>
+  </tr>
+  {% for tensor in include.datasets %}
+  <tr>
+    <td style="text-align:left">
+      <a href="{{tensor.url}}"> {{ tensor.title }} </a>
+    </td>
+    <td style="text-align:right"> {{ tensor.nnz }} </td>
+    <td style="text-align:right"> {{ tensor.order }} </td>
+  </tr>
+  {% endfor %}
+</table>
+
