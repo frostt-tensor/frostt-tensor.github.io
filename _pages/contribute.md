@@ -1,6 +1,6 @@
 ---
 title: Contributing to FROSTT
-permalink: /contributing/
+permalink: /contribute/
 
 github: "https://github.com/ShadenSmith/frostt"
 ---

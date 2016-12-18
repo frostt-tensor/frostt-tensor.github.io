@@ -47,7 +47,7 @@ navbar-links:
     - file formats: "tensors/file-formats"
   tools:
     - splatt: "http://shaden.io/splatt.html"
-  contributing: "contributing"
+  contribute: "contribute"
 
 rss: false
 
