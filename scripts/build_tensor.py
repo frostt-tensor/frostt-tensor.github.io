@@ -75,11 +75,16 @@ description = ''
 if env.desc:
   with open(env.desc, 'r') as desc_file:
     description = desc_file.read()
+    # ensure text is indented
+    description = description.replace('\n','\n  ')
 
 citation = ''
 if env.cite:
   with open(env.cite, 'r') as cite_file:
     citation = cite_file.read()
+    # ensure text is indented
+    citation = citation.replace('\n','\n  ')
+
 
 nonzeros = env.nnz
 order = 0
