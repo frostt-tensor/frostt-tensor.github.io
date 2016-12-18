@@ -37,7 +37,7 @@ parser.add_argument('-n', '--nnz', help='number of non-zeros', default=0, type=i
 parser.add_argument('--desc', help='description file', type=str)
 parser.add_argument('-d', '--dims', help='comma-separated list of dimensions',
     type=str)
-parser.add_argument('--tag', help='add a tag', action='append')
+parser.add_argument('--tags', help='comma-separated list of tags', type=str)
 
 env = parser.parse_args()
 ##############################################################################
@@ -93,9 +93,7 @@ if env.dims:
   dims = [int(x) for x in env.dims.split(',')]
   order = len(dims)
 
-tags = []
-if env.tag:
-  tags = env.tag
+tags = env.tags.split(',')
 ##############################################################################
 
 
@@ -135,7 +133,7 @@ with open(env.output, 'w') as fout:
 
   dim_str= ['{:,d}'.format(d) for d in dims]
   print('dims: {}'.format(dim_str[:order]), file=fout)
-  
+
   density = float(nonzeros) / reduce(lambda x, y: float(x) * float(y), dims)
   print("density: '{:0.3e}'".format(density), file=fout)
 
