@@ -1,8 +1,7 @@
 #!/bin/bash
 
-echo "${#@}"
-if [[ "${#@}" == 1 ]]; then
-  echo "usage: ${@[0]} <tensor file> [tensor directory]"
+if [[ "${#@}" == 0 ]]; then
+  echo "usage: $0 <tensor file> [tensor directory]"
   exit 1;
 fi
 
