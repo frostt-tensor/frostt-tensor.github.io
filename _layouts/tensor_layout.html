@@ -33,16 +33,14 @@ layout: default
 <h3>Downloadable Files</h3>
 <table class="tensor-files">
   <tr>
-    <th>Type</th>
     <th>File</th>
     <th>Description</th>
   </tr>
   {% for file in page.files %}
   <tr>
-    <td> {{ file[0] }} </td>
-    {% assign fname = file[1] | split: "/" %}
-    <td> <a href="{{file[1]}}">{{ fname.last }}</a></td>
-    <td> {{ file[2] }} </td>
+    {% assign fname = file[0] | split: "/" %}
+    <td> <a href="{{file[0]}}">{{ fname.last }}</a></td>
+    <td> {{ file[1] }} </td>
   </tr>
   {% endfor %}
 </table>
@@ -52,7 +50,5 @@ layout: default
   <h3>Citation</h3>
   <pre>{{ page.citation }}</pre>
 {% endif %}
-
-<p> Tensor ID: {{ page.tensor_id }} </p>
 
 {{ content }}

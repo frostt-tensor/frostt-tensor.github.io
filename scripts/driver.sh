@@ -1,15 +1,15 @@
 #!/bin/bash
 
 if [[ "${#@}" == 0 ]]; then
-  echo "usage: $0 <tensor file> [tensor directory]"
+  echo "usage: $0 [tensor directory] [build_tensor.py ARGS]"
   exit 1;
 fi
 
-BUILD_ARGS="$1"
+BUILD_ARGS=""
 
 # Check for template directory
-if [[ -d $2 ]]; then
-  TEMPLATE_DIR=$2
+if [[ -d $1 ]]; then
+  TEMPLATE_DIR=$1
   echo "Using template dir: ${TEMPLATE_DIR}"
 
   # consruct output name
@@ -45,9 +45,14 @@ if [[ -d $2 ]]; then
     BUILD_ARGS="${BUILD_ARGS} --cite ${TEMPLATE_DIR}/cite.bib"
   fi
 
-  BUILD_ARGS="${BUILD_ARGS} ${@:3}"
-else
+  # check files
+  if [[ -f ${TEMPLATE_DIR}/files.txt ]]; then
+    BUILD_ARGS="${BUILD_ARGS} --files ${TEMPLATE_DIR}/files.txt"
+  fi
+
   BUILD_ARGS="${BUILD_ARGS} ${@:2}"
+else
+  BUILD_ARGS="${BUILD_ARGS} ${@:1}"
 fi
 
 echo "Using build args: ${BUILD_ARGS}"

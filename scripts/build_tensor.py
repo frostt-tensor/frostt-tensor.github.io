@@ -29,12 +29,13 @@ PROG_DESC='Construct a markdown file for a tensor to be used by FROSTT.'
 parser = argparse.ArgumentParser(prog=PROG_NAME, description=PROG_DESC)
 parser.add_argument('--version', action='version',
     version='{} v{}'.format(PROG_NAME, VERSION_STR))
-parser.add_argument('tensor', help='sparse tensor, .tns[.gz]')
+parser.add_argument('-t', '--tensor', help='tensor file to extract stats (.tns, .tns,gz)', type=str)
 parser.add_argument('-o', '--output', help='output file', type=str)
-parser.add_argument('-t', '--title', help='tensor title', type=str)
+parser.add_argument('--title', help='tensor title', type=str)
 parser.add_argument('-c', '--cite', help='file with bibtex entry', type=str)
 parser.add_argument('-n', '--nnz', help='number of non-zeros', default=0, type=int)
 parser.add_argument('--desc', help='description file', type=str)
+parser.add_argument('-f', '--files', help='file containing tensor files', type=str)
 parser.add_argument('-d', '--dims', help='comma-separated list of dimensions',
     type=str)
 parser.add_argument('--tags', help='comma-separated list of tags', type=str)
@@ -93,12 +94,20 @@ if env.dims:
   dims = [int(x) for x in env.dims.split(',')]
   order = len(dims)
 
+files = []
+with open(env.files, 'r') as fin:
+  for line in fin:
+    line = line.split()
+    location = '{}/{}'.format(DB_URL, line[0])
+    rest = ' '.join(line[1:])
+    files.append((location, rest))
+
 tags = env.tags.split(',')
 ##############################################################################
 
 
 # Parse data from tensor file if necessary
-if (nonzeros == 0) or (order == 0) or dims == []:
+if env.tensor and ((nonzeros == 0) or (order == 0) or (dims == [])):
   with open_file(env.tensor) as fin:
     for nnz_list in get_nnz(fin):
       order = len(nnz_list) - 1
@@ -111,11 +120,16 @@ if (nonzeros == 0) or (order == 0) or dims == []:
         for m in range(order):
           dims[m] = max(dims[m], int(nnz_list[m]))
 
+
 # determine output file
 if env.output is None:
-  env.output = env.tensor.replace('.tns', '.md')
-  if env.tensor.endswith('.gz'):
-    env.output = env.output[:-3]
+  env.output = 'output.md'
+  if env.tensor:
+    env.tensor.replace('.tns', '.md')
+    if env.tensor.endswith('.gz'):
+      env.output = env.output[:-3]
+
+
 
 
 # write markdown file
@@ -138,8 +152,9 @@ with open(env.output, 'w') as fout:
   print("density: '{:0.3e}'".format(density), file=fout)
 
   print('files:', file=fout)
-  basename = env.tensor[env.tensor.rfind('/')+1 :]
-  print(' - [Tensor, "{}/{}"]\n'.format(DB_URL, basename), file=fout)
+  for f in files:
+    print(' - ["{}", {}]'.format(f[0], f[1]), file=fout)
+  print('\n', file=fout)
 
   print('citation: >\n  {}\n'.format(citation), file=fout)
   print('tags: [{}]'.format(', '.join(tags)), file=fout)
