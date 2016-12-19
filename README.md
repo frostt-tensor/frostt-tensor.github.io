@@ -1,5 +1,6 @@
 # FROSTT
-The Formidable Repository of Open Sparse Tensors and Tools.
+The **F**ormidable **R**epository of **O**pen **S**parse **T**ensors and
+**T**ools.
 
 
 ## Project structure

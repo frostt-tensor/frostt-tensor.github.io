@@ -10,7 +10,7 @@ The **F**ormidable **R**epository of **O**pen **S**parse **T**ensors and
 <pre>
 @online{frosttdataset,
   title = {%raw%}{{FROSTT}{%endraw%}: The Formidable Repository of Open Sparse Tensors and Tools},
-  author = {Shaden Smith and Jee W. Choi and ? and George Karypis},
+  author = {Shaden Smith and Jee W. Choi and Jongsoo Park and George Karypis},
   url = {http://frostt.io/},
   year = {2016},
 }
