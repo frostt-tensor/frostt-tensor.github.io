@@ -7,21 +7,21 @@ description: >
   *user-product-word*, and each non-zero is the number of times a word appears
   in a given review. We pre-processed the review text by removing stop
   words and performing Porter stemming.
-
-
+  
+  
   Please note that we no longer have the mappings for this dataset. It is
   provided as a peformance benchmark.
+  
 
-nnz: "1,741,809,018"
-order: 3
-dims: ["4,821,207", "1,774,269", "1,805,187"]
-
-stats:
-
+order: '3'
+nnz: '1,741,809,018'
+dims: ['4,821,207', '1,774,269', '1,805,187']
+density: '1.128e-10'
 files:
-  - [Tensor, "http://www-users.cs.umn.edu/~shaden/sc16/datasets/amazon.tns"]
+ - ["http://www-users.cs.umn.edu/~shaden/frostt_data/amazon/amazon-reviews.tns.gz", Amazon-Reviews tensor]
 
-citation: |
+
+citation: >
   @inproceedings{mcauley2013,
     title={Hidden factors and hidden topics: understanding rating dimensions with review text},
     author={McAuley, Julian and Leskovec, Jure},
@@ -30,6 +30,9 @@ citation: |
     year={2013},
     organization={ACM}
   }
+  
 
-tags: [review, amazon]
+tags: [amazon, text]
+
+# generated on (2016-12-18 19:02:19) by build_tensor.py v0.1
 ---

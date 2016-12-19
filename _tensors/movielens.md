@@ -5,17 +5,17 @@ description: >
   Movie ratings from [Movielens](https://movielens.org). The modes represent
   *user-movie-time*, where time is at the granularity of week. Each tensor
   non-zero is a rating provided by a real user on the scale of zero to five.
+  
 
-nnz: "20,000,263"
-order: 3
-dims: ["138,493", "26,744", "234"]
-
-stats:
-
+order: '3'
+nnz: '20,000,263'
+dims: ['138,493', '26,744', '234']
+density: '2.308e-05'
 files:
-  - [Tensor, "http://www-users.cs.umn.edu/~shaden/sc16/datasets/outpatient3_train.tns"]
+ - ["http://www-users.cs.umn.edu/~shaden/frostt_data/movielens/ml20m.tns.gz", Movielens ratings]
 
-citation: |
+
+citation: >
   @article{harper2016movielens,
     title={The movielens datasets: History and context},
     author={Harper, F Maxwell and Konstan, Joseph A},
@@ -26,7 +26,9 @@ citation: |
     year={2016},
     publisher={ACM}
   }
+  
 
+tags: [ratings, movielens, tags]
 
-tags: [ml20m]
+# generated on (2016-12-18 19:31:13) by build_tensor.py v0.1
 ---

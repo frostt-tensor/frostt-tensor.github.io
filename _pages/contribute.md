@@ -12,7 +12,8 @@ FROSTT is an open source project that thrives off community contributions.
 ## Tensor Submission
 If you have a tensor that you would like to see in this collection, please
 consider sharing with us. You **must** have the rights to distribute the data.
-By sharing your dataset, you acknowledge that will become publicly available.
+By sharing your dataset, you acknowledge that the data will become publicly
+available.
 
 ## Development
 Want to contribute to the development of this site or its tools? Great! All

@@ -55,6 +55,4 @@ else
   BUILD_ARGS="${BUILD_ARGS} ${@:1}"
 fi
 
-echo "Using build args: ${BUILD_ARGS}"
-
 ./build_tensor.py  ${BUILD_ARGS}

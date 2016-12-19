@@ -1,0 +1,6 @@
+delicious/delicious-4d.tns.gz Tensor
+delicious/delicious-3d.tns.gz Tensor with the fourth mode (dates) removed
+delicious/mode-1-users.map.gz Users (just points new IDs to old IDs)
+delicious/mode-2-items.map.gz Items (just points new IDs to old IDs)
+delicious/mode-3-tags.map.gz  Tags
+delicious/mode-4-dates.map.gz Dates
