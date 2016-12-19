@@ -2,7 +2,7 @@
 title: Contributing to FROSTT
 permalink: /contribute/
 
-github: "https://github.com/ShadenSmith/frostt"
+github: "https://github.com/ShadenSmith/frostt.io"
 ---
 
 
@@ -13,7 +13,8 @@ FROSTT is an open source project that thrives off community contributions.
 If you have a tensor that you would like to see in this collection, please
 consider sharing with us. You **must** have the rights to distribute the data.
 By sharing your dataset, you acknowledge that the data will become publicly
-available.
+available. Instructions for tensor submission are availble on
+[Github]({{page.github}}).
 
 ## Development
 Want to contribute to the development of this site or its tools? Great! All

@@ -40,7 +40,7 @@ defaults:
 include: ["_pages"]
 
 navbar-links:
-  about: "about"
+  home: ""
   news: "news"
   tensors:
     - collection: "tensors/index.html"
