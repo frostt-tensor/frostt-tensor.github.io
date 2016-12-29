@@ -103,7 +103,9 @@ with open(env.files, 'r') as fin:
     rest = ' '.join(line[1:])
     files.append((location, rest))
 
-tags = env.tags.split(',')
+tags = []
+if env.tags:
+  tags = env.tags.split(',')
 ##############################################################################
 
 

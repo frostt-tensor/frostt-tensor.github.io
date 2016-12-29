@@ -16,6 +16,8 @@ if [[ -d $1 ]]; then
   OUT_DIR=""
   if [[ $(pwd) =~ .*scripts$ ]]; then
     OUT_DIR=$(dirname $(pwd))/_tensors
+  elif [[ $(pwd) =~ .*tensors$ ]]; then
+    OUT_DIR=$(dirname $(pwd))/_tensors
   else
     OUT_DIR=$(pwd)/_tensors
   fi
