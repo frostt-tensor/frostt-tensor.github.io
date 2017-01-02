@@ -17,7 +17,7 @@ files:
 citation: >
   @inproceedings{carlson2010toward,
   	title={Toward an Architecture for Never-Ending Language Learning.},
-  	author={Carlson, Andrew and Betteridge, Justin and Kisiel, Bryan and Settles, Burr and Hruschka Jr, Estevam R and Mitchell, Tom M},
+  	author={Carlson, Andrew and Betteridge, Justin and Kisiel, Bryan and Settles, Burr and Hruschka Jr., Estevam R. and Mitchell, Tom M.},
   	booktitle={AAAI},
   	volume={5},
   	pages={3},

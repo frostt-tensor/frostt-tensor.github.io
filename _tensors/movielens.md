@@ -18,7 +18,7 @@ files:
 citation: >
   @article{harper2016movielens,
     title={The movielens datasets: History and context},
-    author={Harper, F Maxwell and Konstan, Joseph A},
+    author={Harper, F. Maxwell and Konstan, Joseph A.},
     journal={ACM Transactions on Interactive Intelligent Systems (TiiS)},
     volume={5},
     number={4},
