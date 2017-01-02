@@ -2,12 +2,17 @@
 title: VAST 2015 Mini-Challenge 1
 
 description: >
-  Taken from the [VAST 2015 Mini-Challenge 1](http://vacommunity.org/VAST+Challenge+2015).
-  
+  Synthetic dataset from the [VAST 2015 Mini-Challenge 1](http://vacommunity.org/VAST+Challenge+2015).
+  This tensor represents events ('check-in', 'movement') of attendees at a
+  theme park over one weekend.  Hidden within the data are various malicious
+  events. Non-zero values are binary, indicating that an attendee performed an
+  event. The modes are *time-person-action-xloc-yloc*, with time at the
+  resolution of seconds. The order-3 tensor is the same data with location
+  information removed.
+
 order: '5'
-nnz: '26,021,946'
-dims: ['165428','11375','3','101','90']
-density: '6.915e-03'
+nnz: '26,021,945'
+dims: ['165427','11374','2','100','89']
 
 
 files:
@@ -20,7 +25,6 @@ files:
  - ["http://www-users.cs.umn.edu/~shaden/frostt_data/vast-2015-mc1/mode-5-ylocs.map.gz", Y coordinates]
 
 
-
 citation: >
   @inproceedings{whiting2015vast,
     title={VAST Challenge 2015: Mayhem at dinofun world},
@@ -30,7 +34,7 @@ citation: >
     year={2015},
     organization={IEEE}
   }
-  
 
-tags: [security]
+
+tags: [vast]
 ---
