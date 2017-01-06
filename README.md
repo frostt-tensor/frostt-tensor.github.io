@@ -51,7 +51,7 @@ Reload your local [FROSTT](http://localhost:4000/tensors/) page and Big-Tensor
 should now be available.
 
 4. Once the tensor page is ready, submit a pull request and include a public
-link to the data in `files.txt`. We will copy the data to our hosting location,
-update the links in `files.txt`, merge the pull request, and go live!
+link to the tensor data. We will copy the data to our hosting location, update
+the links to our own hosting, merge the pull request, and go live!
 
 
