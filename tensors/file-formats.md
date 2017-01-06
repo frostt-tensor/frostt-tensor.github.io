@@ -38,6 +38,6 @@ with us.
 Suppose a tensor of product ratings has the first mode representing 2000 users,
 and the second mode representing 100 products. The file `mode-1-users.map`
 would have 2000 lines, with each line containing the username or ID of a
-customer. Similarly, the file `mode-2-products.map` would contain the name or
-ID of the 100 products.
+customer. Similarly, the file `mode-2-products.map` would have 100 lines, each
+containing the name or ID of a product.
 
