@@ -27,5 +27,4 @@ citation: >
 
 tags: [nell, knowledge]
 
-# generated on (2016-12-18 13:59:07) by build_tensor.py v0.1
 ---

@@ -35,6 +35,4 @@ citation: >
     organization={IEEE}
   }
 
-
-tags: [vast]
 ---

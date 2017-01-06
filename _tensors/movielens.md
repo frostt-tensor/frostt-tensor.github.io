@@ -30,5 +30,4 @@ citation: >
 
 tags: [ratings, movielens, tags]
 
-# generated on (2016-12-18 19:31:13) by build_tensor.py v0.1
 ---

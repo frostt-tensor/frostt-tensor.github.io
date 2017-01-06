@@ -38,5 +38,4 @@ citation: >
 
 tags: [tags, binary]
 
-# generated on (2016-12-18 13:48:40) by build_tensor.py v0.1
 ---

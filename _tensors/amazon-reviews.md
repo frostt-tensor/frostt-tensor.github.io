@@ -34,5 +34,4 @@ citation: >
 
 tags: [amazon, text]
 
-# generated on (2016-12-18 19:02:19) by build_tensor.py v0.1
 ---

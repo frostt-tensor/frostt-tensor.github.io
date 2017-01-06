@@ -38,37 +38,18 @@ encouraged. To make a contribution, just fork this repository, create a branch
 
 ### Submitting a tensor
 
-1. To submit a new tensor, create a directory in `tensors/site_data/`. We
-recommend beginning with the provided template. Suppose your new tensor is
-named Big-Tensor:
+1. To submit a new tensor, copy the provided template `tensor-template.md`
+to the `_tensors/` directory. The name of the file will form the URL of the
+tensor page. Suppose your new tensor is named Big-Tensor:
   ```
-  $ cp -R tensors/site_data/template tensors/site_data/big-tensor
-  ```
-
-2. Fill in as much information as possible about your new tensor. A few tips:
-  - Citation information (`cite.bib`) and tags (`tags.txt`) are optional.
-    Delete them if unused.
-  - Text in `description.md` will be rendered with Markdown.
-  - File listings (`files.txt`) should take the form of "big-tensor/file
-    Description". These will point to the correct locations in step 4.
-  ```
-  $ ls -1 tensors/site_data/big-tensor
-    cite.bib
-    description.txt
-    dims.txt
-    files.txt
-    nnz.txt
-    tags.txt
-    title.txt
+  $ cp tensor-template.md _tensors/big-tensor.md
   ```
 
-3. Build your tensor page:
-  ```
-  $ ./scripts/driver.sh tensors/site_data/big-tensor
-  ```
-  If all went well, `_tensors/big-tensor.md` should now exist. Reload your local
-  [FROSTT](http://localhost:4000/tensors/) and Big-Tensor should now be
-  available.
+2. Fill in as much information as possible about your new tensor.
+
+3. Build your tensor page. If all went well, your tensor should now exist.
+Reload your local [FROSTT](http://localhost:4000/tensors/) page and Big-Tensor
+should now be available.
 
 4. Once the tensor page is ready, submit a pull request and include a public
 link to the data in `files.txt`. We will copy the data to our hosting location,
