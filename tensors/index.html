@@ -13,25 +13,24 @@ title: The Tensor Repository
 {% endfor %}
 {% assign tensor_tags = (tensor_tags | split: "|" | uniq | sort) %}
 
+
 <!-- Make a link to each tag-specific table. -->
 <p>
-Skip to:
+Skip to tags:
 {% for tag in tensor_tags %}
   <a href="#tbl_{{tag}}">{{ tag }}</a>
 {% endfor %}
 </p>
 
 
-<h2> All tensors </h2>
+<h2> All tensors: </h2>
 {% include tensor_table.html tbl_name="all" datasets=site.tensors %}
 
-
+<h2 style="padding-top: 60px">Tensors grouped by tag:</h2>
 <!-- Tag-specific tables -->
 {% for tag in tensor_tags %}
-  <h3>{{tag}}</h3>
   {% assign tbl_name = "tbl_" | append: tag %}
   {% assign current_tensors = (site.tensors | where_exp:"tt", "tt.tags contains tag") %}
   {% include tensor_table.html tbl_id=tbl_name datasets=current_tensors %}
 {% endfor %}
-
 

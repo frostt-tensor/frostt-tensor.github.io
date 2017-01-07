@@ -22,6 +22,34 @@ layout: default
     <td> Dimensions </td>
     <td style="text-align:right"> {{ page.dims | join: " x " }} </td>
   </tr>
+
+
+  {% comment %}
+    Tag row is a list of tags, with the text being a link to tbl_{{tag}} on the
+    main tag page. We do this by first capturing link text, all separated by
+    "|".  Then we splat and join them in the table cell with ",". By
+    splitting/joining we remove the last "|".
+
+    Can this be accomplished easier?
+  {% endcomment %}
+
+  {% if page.tags %}
+    {% assign tag_links = "" %}
+    {% for tag in page.tags %}
+      {% capture link_text %}
+        <a href="/tensors/index.html#tbl_{{tag}}">{{tag}}</a>
+      {% endcapture %}
+      {% assign tag_links = (tag_links | append: link_text | append: "|" %}
+    {% endfor %}
+    <tr>
+      <td> Tags </td>
+      <td style="text-align:right">
+        {{ tag_links | split: "|" | join: ", " }}
+      </td>
+    </tr>
+  {% endif %}
+
+
   {% for prop in page.stats %}
   <tr>
     <td> {{ prop[0] }} </td>
@@ -29,6 +57,7 @@ layout: default
   </tr>
   {% endfor %}
 </table>
+
 
 <h3>Downloadable Files</h3>
 <table class="tensor-files">
