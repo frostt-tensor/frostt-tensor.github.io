@@ -3,10 +3,10 @@ title: Reddit-2015
 
 description: >
   Comments posted on [Reddit](https://www.reddit.com/) over the year 2015. The
-  tensor modes represent *user-subreddit-word*, where *subreddits* are
-  community forums. Non-zero *(u, s, w)* is the number of times that user *u*
-  posted word *w* in subreddit *s* over the year 2015. Users, subreddits, and
-  words with less than five entries have been removed.
+  tensor modes represent *user-subreddit-word*, where a *subreddit* is a
+  community forum. Entry $$(u, s, w)$$ is the number of times that user $$u$$
+  posted word $$w$$ in subreddit $$s$$ over the year 2015. Users, subreddits,
+  and words with less than five entries have been removed.
 
 
 # Tensor statistics
