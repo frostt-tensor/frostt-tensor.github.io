@@ -28,6 +28,7 @@ files:
 
 # bibtex citation
 citation: >
+  None.
 
 # Where to file the tensor?
 tags: [text]
