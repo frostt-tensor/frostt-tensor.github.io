@@ -44,4 +44,5 @@ navbar_pages:
   Contribute: "/contribute/"
 
 show_downloads: false
-#google_analytics: 
+google_analytics: UA-90336800-1
+
