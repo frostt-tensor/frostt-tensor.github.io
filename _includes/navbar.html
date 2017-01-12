@@ -1,8 +1,11 @@
 <nav>
   <ul>
-    <a href="/"> <li>Main</li> </a>
-    <a href="/news"> <li>News</li> </a>
-    <a href="/tensors"> <li>Tensors</li> </a>
-    <a href="/contribute"> <li>Contribute</li></a>
+    {% for p in site.navbar_pages %}
+      {% if page.url == p.last %}
+        <a href="{{p.last}}"> <li class="active_page">{{p.first}}</li> </a>
+      {% else %}
+        <a href="{{p.last}}"> <li>{{p.first}}</li> </a>
+      {% endif %}
+    {% endfor %}
   </ul>
 </nav>

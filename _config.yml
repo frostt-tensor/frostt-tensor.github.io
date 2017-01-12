@@ -7,8 +7,7 @@ url: "/" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-slate
-#gems:
-  #- jekyll-feed
+
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -37,6 +36,12 @@ defaults:
       social-share: false
 
 include: ["_pages"]
+
+navbar_pages:
+  main: "/"
+  news: "/news/"
+  tensors: "/tensors/"
+  contribute: "/contribute/"
 
 show_downloads: false
 #google_analytics: 
