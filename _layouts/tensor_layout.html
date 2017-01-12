@@ -23,7 +23,15 @@ layout: default
   </tr>
   <tr>
     <td> Dimensions </td>
-    <td style="text-align:right"> {{ page.dims | join: " x " }} </td>
+    <td style="text-align:right">
+      {% assign intorder = page.order | to_integer %}
+      {% if intorder < 6 %}
+        {{ page.dims | join: " x " }}
+      {% else %}
+        {% assign dimlist = page.dims | sort %}
+        [{{ dimlist.first }} ... {{ dimlist.last }}]
+      {% endif %}
+      </td>
   </tr>
 
 

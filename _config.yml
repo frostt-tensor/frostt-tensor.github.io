@@ -6,10 +6,9 @@ url: "/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
-#theme: minima
-theme: beautiful-jekyll-theme
-gems:
-  - jekyll-feed
+theme: jekyll-theme-slate
+#gems:
+  #- jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -39,20 +38,5 @@ defaults:
 
 include: ["_pages"]
 
-navbar-links:
-  home: ""
-  news: "news"
-  tensors:
-    - collection: "tensors/index.html"
-    - file formats: "tensors/file-formats"
-  tools:
-    - splatt: "http://shaden.io/splatt.html"
-  contribute: "contribute"
-
-rss: false
-
-author:
-  name: Shaden Smith
-  email: shaden@cs.umn.edu
-  github: ShadenSmith
-
+show_downloads: false
+#google_analytics: 

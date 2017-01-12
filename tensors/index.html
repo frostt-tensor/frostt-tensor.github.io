@@ -4,6 +4,10 @@ title: The Tensor Repository
 
 <h1> Tensors </h1>
 
+See our page on <a href="file-formats.html">file formats</a>.
+
+
+
 <!-- Generate tag list -->
 {% assign tensor_tags = "" %}
 {% for tensor in site.tensors %}
@@ -14,6 +18,11 @@ title: The Tensor Repository
 {% assign tensor_tags = (tensor_tags | split: "|" | uniq | sort) %}
 
 
+<h2> All tensors: </h2>
+{% include tensor_table.html tbl_name="all" datasets=site.tensors %}
+
+<h2 style="padding-top: 60px">Tensors grouped by tag:</h2>
+
 <!-- Make a link to each tag-specific table. -->
 <p>
 Skip to tags:
@@ -22,11 +31,6 @@ Skip to tags:
 {% endfor %}
 </p>
 
-
-<h2> All tensors: </h2>
-{% include tensor_table.html tbl_name="all" datasets=site.tensors %}
-
-<h2 style="padding-top: 60px">Tensors grouped by tag:</h2>
 <!-- Tag-specific tables -->
 {% for tag in tensor_tags %}
   {% assign tbl_name = "tbl_" | append: tag %}

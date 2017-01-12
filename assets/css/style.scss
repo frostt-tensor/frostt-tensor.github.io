@@ -1,0 +1,47 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.inner {
+  max-width: 1024px;
+}
+
+nav {
+  float: right;
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+    display: inline;
+    padding: 8px;
+    margin: 2px;
+    background: #fff;
+
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+  }
+  li:hover {
+    background-color: grey;
+  }
+
+  a {
+    font-size: 22px;
+    color: black;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+
+.tensor_table {
+
+}
+
