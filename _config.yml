@@ -31,6 +31,7 @@ defaults:
       path: ""
       type: "posts"
     values:
+      permalink: /news/:title.html
       layout: "posts"
       comments: false
       social-share: false

@@ -1,5 +1,5 @@
 ---
-title: News
+title: FROSTT News
 permalink: /news/
 ---
 
