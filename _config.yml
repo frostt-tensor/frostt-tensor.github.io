@@ -38,10 +38,10 @@ defaults:
 include: ["_pages"]
 
 navbar_pages:
-  main: "/"
-  news: "/news/"
-  tensors: "/tensors/"
-  contribute: "/contribute/"
+  Main: "/"
+  News: "/news/"
+  Tensors: "/tensors/"
+  Contribute: "/contribute/"
 
 show_downloads: false
 #google_analytics: 
