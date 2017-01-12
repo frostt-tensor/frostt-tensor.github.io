@@ -51,3 +51,15 @@ nav {
 }
 
 
+@media screen and (max-width: 480px) {
+  .inner {
+    max-width: 480px;
+  }
+
+  nav {
+    a {
+      font-size: 14px;
+      color: black;
+    }
+  }
+}
