@@ -25,44 +25,34 @@ nav {
 	}
 
 	li {
-    display: inline-block;
-    padding: 8px;
-    margin: 0 2px 2px;
-    background: #fff;
-
-    height: 24px;
-    line-height: 24px;
-
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -khtml-border-radius: 4px;
-    border-radius: 4px;
-
-    a {
-      font-size: 22px;
+      display: inline-block;
+      margin: 0 2px 2px;
+      height: 40px;
       line-height: 24px;
-      color: black;
-    }
-    a:hover {
-      text-decoration: none;
-    }
 
-  }
-  li:hover {
-    background-color: grey;
+      a {
+        color: black;
+        background-color: #fff;
+
+        padding: 8px;
+        font-size: 22px;
+        line-height: 24px;
+
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -khtml-border-radius: 4px;
+        border-radius: 4px;
+      }
+      a:hover {
+        text-decoration: none;
+        background-color: grey;
+      }
   }
 }
 
-
-.tensor_table {
-
-}
-
-
-.active_page {
+.active_page a {
   background-color: #C0C0C0;
 }
-
 
 @media screen and (max-width: 480px) {
   .inner {
@@ -71,8 +61,7 @@ nav {
 
   nav {
     li {
-      height: 16px;
-      line-height: 16px;
+      height: 32px;
 
       a {
         font-size: 14px;
