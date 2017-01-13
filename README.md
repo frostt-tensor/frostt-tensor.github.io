@@ -21,8 +21,8 @@ frostt.io/
 You can build and serve FROSTT for local development:
 ```
 $ bundle install
-$ jekyll serve --watch --detach
-$ jekyll build --watch
+$ bundle exec jekyll serve --watch --detach
+$ bundle exec jekyll build --watch
 ```
 
 Then just point your browser to [localhost:4000](localhost:4000). You can edit
