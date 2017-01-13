@@ -2,9 +2,13 @@
   <ul>
     {% for p in site.navbar_pages %}
       {% if page.url == p.last %}
-        <a href="{{p.last}}"> <li class="active_page">{{p.first}}</li> </a>
+        <li class="active_page">
+          <a href="{{p.last}}">{{p.first}}</a>
+        </li>
       {% else %}
-        <a href="{{p.last}}"> <li>{{p.first}}</li> </a>
+        <li>
+          <a href="{{p.last}}">{{p.first}}</a>
+        </li>
       {% endif %}
     {% endfor %}
   </ul>

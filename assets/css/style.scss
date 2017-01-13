@@ -7,6 +7,14 @@
   max-width: 1024px;
 }
 
+#header_wrap {
+  overflow: hidden;
+}
+
+#title {
+  float: left;
+}
+
 nav {
   float: right;
 
@@ -17,26 +25,31 @@ nav {
 	}
 
 	li {
-    display: inline;
+    display: inline-block;
     padding: 8px;
-    margin: 2px;
+    margin: 0 2px 2px;
     background: #fff;
+
+    height: 24px;
+    line-height: 24px;
 
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     -khtml-border-radius: 4px;
     border-radius: 4px;
+
+    a {
+      font-size: 22px;
+      line-height: 24px;
+      color: black;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+
   }
   li:hover {
     background-color: grey;
-  }
-
-  a {
-    font-size: 22px;
-    color: black;
-  }
-  a:hover {
-    text-decoration: none;
   }
 }
 
@@ -57,9 +70,22 @@ nav {
   }
 
   nav {
-    a {
-      font-size: 14px;
-      color: black;
+    li {
+      height: 16px;
+      line-height: 16px;
+
+      a {
+        font-size: 14px;
+        line-height: 16px;
+        color: black;
+      }
     }
   }
+}
+
+/* adjust pre's so page doesn't pick up a horizontal scroll */
+#main_content pre {
+  width: 98%;
+  padding-right: 1%;
+  padding-left: 1%;
 }
