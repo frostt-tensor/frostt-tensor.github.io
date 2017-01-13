@@ -1,0 +1,15 @@
+{% comment %}
+  Render a list of dimensions, unless the list is long. If it's long, just
+  show max/min.
+
+  TODO: show other stats than max/min?
+{% endcomment %}
+
+
+{% assign order = include.dims | size %}
+{% if order < 6 %}
+  {{ include.dims | join: " x " }}
+{% else %}
+  {% assign dimlist = include.dims | sort %}
+  [{{ dimlist.first }} ... {{ dimlist.last }}]
+{% endif %}

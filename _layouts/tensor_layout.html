@@ -24,14 +24,8 @@ layout: default
   <tr>
     <td> Dimensions </td>
     <td style="text-align:right">
-      {% assign intorder = page.order | to_integer %}
-      {% if intorder < 6 %}
-        {{ page.dims | join: " x " }}
-      {% else %}
-        {% assign dimlist = page.dims | sort %}
-        [{{ dimlist.first }} ... {{ dimlist.last }}]
-      {% endif %}
-      </td>
+      {% include dim_string.html dims=page.dims %}
+    </td>
   </tr>
 
 
