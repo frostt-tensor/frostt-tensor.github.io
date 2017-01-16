@@ -35,6 +35,6 @@ citation: >
     organization={IEEE}
   }
 
-tags: [surveillance]
+tags: [surveillance, binary]
 
 ---

@@ -36,6 +36,6 @@ citation: >
 
 
 # Where to file the tensor?
-tags: [text]
+tags: [counts, text]
 
 ---

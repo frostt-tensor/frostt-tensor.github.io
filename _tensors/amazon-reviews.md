@@ -1,5 +1,5 @@
 ---
-title: Amazon-Reviews
+title: Amazon Reviews
 
 description: >
   Product reviews from [Amazon](https://www.amazon.com) and collected by
@@ -32,6 +32,6 @@ citation: >
   }
   
 
-tags: [amazon, text]
+tags: [counts, text]
 
 ---
