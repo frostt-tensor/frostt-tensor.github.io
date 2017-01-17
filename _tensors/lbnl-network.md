@@ -17,12 +17,12 @@ density: '4.230708e-14'
 
 # Each entry is a list ["URL", "description"]
 files:
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/lbnl-network/lbnl-network.tns.gz", Tensor]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/lbnl-network/mode-1-send_ips.map.gz", Sender IP addresses]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/lbnl-network/mode-2-send_ports.map.gz", Sender ports]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/lbnl-network/mode-3-dest_ips.map.gz", Destination IP addresses]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/lbnl-network/mode-4-dest_ports.map.gz", Destination ports]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/lbnl-network/mode-5-times.map.gz", Time IDs, in seconds.]
+ - ["lbnl-network/lbnl-network.tns.gz", Tensor]
+ - ["lbnl-network/mode-1-send_ips.map.gz", Sender IP addresses]
+ - ["lbnl-network/mode-2-send_ports.map.gz", Sender ports]
+ - ["lbnl-network/mode-3-dest_ips.map.gz", Destination IP addresses]
+ - ["lbnl-network/mode-4-dest_ports.map.gz", Destination ports]
+ - ["lbnl-network/mode-5-times.map.gz", Time IDs, in seconds.]
 
 
 # bibtex citation

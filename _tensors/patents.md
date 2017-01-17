@@ -20,10 +20,10 @@ dims: ['46', '239,172', '239,172']
 
 # Each entry is a list ["URL", "description"]
 files:
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/patents/patents.tns.gz", Tensor]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/patents/mode-1-years.tns.gz", Years]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/patents/mode-2-terms.tns.gz", Terms]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/patents/mode-3-terms.tns.gz", Terms]
+ - ["patents/patents.tns.gz", Tensor]
+ - ["patents/mode-1-years.tns.gz", Years]
+ - ["patents/mode-2-terms.tns.gz", Terms]
+ - ["patents/mode-3-terms.tns.gz", Terms]
 
 
 # bibtex citation

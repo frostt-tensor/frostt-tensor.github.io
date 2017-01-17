@@ -16,11 +16,11 @@ dims: ['6,066', '5,699', '244,268', '1,176']
 
 # Each entry is a list ["URL", "description"]
 files:
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/enron/enron.tns.gz", Enron tensor]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/enron/mode-1-senders.map.gz", Sender emails]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/enron/mode-2-receivers.map.gz", Receiver emails]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/enron/mode-3-words.map.gz", Words]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/enron/mode-4-dates.map.gz", Dates]
+ - ["enron/enron.tns.gz", Enron tensor]
+ - ["enron/mode-1-senders.map.gz", Sender emails]
+ - ["enron/mode-2-receivers.map.gz", Receiver emails]
+ - ["enron/mode-3-words.map.gz", Words]
+ - ["enron/mode-4-dates.map.gz", Dates]
 
 
 # bibtex citation

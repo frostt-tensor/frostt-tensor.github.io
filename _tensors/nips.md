@@ -15,11 +15,11 @@ dims: ['2,482', '2,862', '14,036', '17']
 
 # Each entry is a list ["URL", "description"]
 files:
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/nips/nips.tns.gz", Tensor]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/nips/mode-1-papers.map.gz", Paper IDs]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/nips/mode-2-authors.map.gz", Paper authors]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/nips/mode-3-words.map.gz", Words]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/nips/mode-4-years.map.gz", Years]
+ - ["nips/nips.tns.gz", Tensor]
+ - ["nips/mode-1-papers.map.gz", Paper IDs]
+ - ["nips/mode-2-authors.map.gz", Paper authors]
+ - ["nips/mode-3-words.map.gz", Words]
+ - ["nips/mode-4-years.map.gz", Years]
 
 
 # bibtex citation

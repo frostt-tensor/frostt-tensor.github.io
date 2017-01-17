@@ -18,12 +18,12 @@ nnz: '112,890,310'
 dims: ['319,686', '28,153,045', '1,607,191', '731']
 
 files:
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/flickr/flickr-4d.tns.gz", Tensor]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/flickr/flickr-3d.tns.gz", Tensor with the fourth mode (dates) removed]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/flickr/mode-1-users.map.gz", Users (just points new IDs to old IDs)]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/flickr/mode-2-items.map.gz", Items (just points new IDs to old IDs)]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/flickr/mode-3-tags.map.gz", Tags]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/flickr/mode-4-dates.map.gz", Dates]
+ - ["flickr/flickr-4d.tns.gz", Tensor]
+ - ["flickr/flickr-3d.tns.gz", Tensor with the fourth mode (dates) removed]
+ - ["flickr/mode-1-users.map.gz", Users (just points new IDs to old IDs)]
+ - ["flickr/mode-2-items.map.gz", Items (just points new IDs to old IDs)]
+ - ["flickr/mode-3-tags.map.gz", Tags]
+ - ["flickr/mode-4-dates.map.gz", Dates]
 
 
 citation: >

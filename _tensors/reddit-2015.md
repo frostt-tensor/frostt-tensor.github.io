@@ -17,10 +17,10 @@ dims: ['8,211,298', '176,962', '8,116,559']
 
 # Each entry is a list ["URL", "description"]
 files:
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/reddit-2015/reddit-2015.tns.gz", Tensor]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/reddit-2015/mode-1-users.map.gz", Users]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/reddit-2015/mode-2-subreddits.map.gz", Subreddits]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/reddit-2015/mode-3-words.map.gz", Words]
+ - ["reddit-2015/reddit-2015.tns.gz", Tensor]
+ - ["reddit-2015/mode-1-users.map.gz", Users]
+ - ["reddit-2015/mode-2-subreddits.map.gz", Subreddits]
+ - ["reddit-2015/mode-3-words.map.gz", Words]
 
 
 # bibtex citation

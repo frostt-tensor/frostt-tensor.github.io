@@ -18,12 +18,12 @@ nnz: '140,126,181'
 dims: ['532,924', '17,262,471', '2,480,308', '1,443']
 density: '4.256e-15'
 files:
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/delicious/delicious-4d.tns.gz", Tensor]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/delicious/delicious-3d.tns.gz", Tensor with the fourth mode (dates) removed]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/delicious/mode-1-users.map.gz", Users (just points new IDs to old IDs)]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/delicious/mode-2-items.map.gz", Items (just points new IDs to old IDs)]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/delicious/mode-3-tags.map.gz", Tags]
- - ["http://www-users.cs.umn.edu/~shaden/frostt_data/delicious/mode-4-dates.map.gz", Dates]
+ - ["delicious/delicious-4d.tns.gz", Tensor]
+ - ["delicious/delicious-3d.tns.gz", Tensor with the fourth mode (dates) removed]
+ - ["delicious/mode-1-users.map.gz", Users (just points new IDs to old IDs)]
+ - ["delicious/mode-2-items.map.gz", Items (just points new IDs to old IDs)]
+ - ["delicious/mode-3-tags.map.gz", Tags]
+ - ["delicious/mode-4-dates.map.gz", Dates]
 
 
 citation: >
