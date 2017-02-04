@@ -78,3 +78,15 @@ nav {
   padding-right: 1%;
   padding-left: 1%;
 }
+
+
+.binary_table {
+  td:nth-child(1) {
+    white-space: nowrap;
+  }
+  td:nth-child(2) {
+    white-space: nowrap;
+  }
+}
+
+
