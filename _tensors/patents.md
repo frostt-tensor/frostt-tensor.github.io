@@ -21,9 +21,9 @@ dims: ['46', '239,172', '239,172']
 # Each entry is a list ["URL", "description"]
 files:
  - ["patents/patents.tns.gz", Tensor]
- - ["patents/mode-1-years.tns.gz", Years]
- - ["patents/mode-2-terms.tns.gz", Terms]
- - ["patents/mode-3-terms.tns.gz", Terms]
+ - ["patents/mode-1-years.map.gz", Years]
+ - ["patents/mode-2-terms.map.gz", Terms]
+ - ["patents/mode-3-terms.map.gz", Terms]
 
 
 # bibtex citation
