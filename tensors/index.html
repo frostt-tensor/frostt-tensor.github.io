@@ -15,7 +15,7 @@ See our page on <a href="file-formats.html">file formats</a>.
     {% assign tensor_tags = tensor_tags | append: tag | append: "|" %}
   {% endfor %}
 {% endfor %}
-{% assign tensor_tags = (tensor_tags | split: "|" | uniq | sort) %}
+{% assign tensor_tags = tensor_tags | split: "|" | uniq | sort %}
 
 
 <h2> All tensors: </h2>
@@ -34,7 +34,7 @@ Skip to tags:
 <!-- Tag-specific tables -->
 {% for tag in tensor_tags %}
   {% assign tbl_name = "tbl_" | append: tag %}
-  {% assign current_tensors = (site.tensors | where_exp:"tt", "tt.tags contains tag") %}
+  {% assign current_tensors = site.tensors | where_exp:"tt", "tt.tags contains tag" %}
   {% include tensor_table.html tbl_id=tbl_name datasets=current_tensors %}
 {% endfor %}
 

@@ -44,7 +44,7 @@ layout: default
       {% capture link_text %}
         <a href="/tensors/index.html#tbl_{{tag}}">{{tag}}</a>
       {% endcapture %}
-      {% assign tag_links = (tag_links | append: link_text | append: "|" %}
+      {% assign tag_links = tag_links | append: link_text | append: "|" %}
     {% endfor %}
     <tr>
       <td> Tags </td>
