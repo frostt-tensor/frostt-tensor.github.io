@@ -48,5 +48,5 @@ navbar_pages:
 show_downloads: false
 google_analytics: UA-90336800-1
 
-datahost_base: 'https://dl.dropboxusercontent.com/u/1636548/frostt_data'
+datahost_base: 'https://s3.us-east-2.amazonaws.com/frostt/frostt_data'
 
