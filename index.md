@@ -19,7 +19,7 @@ Please consider citing FROSTT if we have contributed to a publication:
 <pre>
 @online{frosttdataset,
   title = {%raw%}{{FROSTT}{%endraw%}: The Formidable Repository of Open Sparse Tensors and Tools},
-  author = {Shaden Smith and Jee W. Choi and Jiajia Li and Richard Vuduc and Jongsoo Park and Xing Liu and George Karypis},
+  author = {Smith, Shaden and Choi, Jee W. and Li, Jiajia and Vuduc, Richard and Park, Jongsoo and Liu, Xing and Karypis, George},
   url = {http://frostt.io/},
   year = {2017},
 }
