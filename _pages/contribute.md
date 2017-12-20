@@ -11,10 +11,22 @@ github-io: "https://github.com/frostt-tensor/frostt-tensor.github.io/"
 # Contributing to FROSTT
 FROSTT is an open source project that thrives off community contributions.
 
-## Development
+## FROSTT Development
 Want to contribute to the development of this site or its tools? Great! All
 development is conducted on [Github]({{page.github}}). Feel free to file an
 issue or submit a pull request.
+
+## Tensor Construction
+Sparse tensors are constructed from a large variety of data sources. These
+sources are often large, unstructured, and noisy. To aid in the construction of
+tensors from these data sources, FROSTT has released a tool for parsing
+CSV-like data. If your data can be represented as a CSV file, our
+`tensor_parser` tool can map features of data (represented as columns) to
+tensor modes and handle many of the tedious details such as mapping entities
+to contiguous indices, sorting data, and merging duplicate non-zeros,
+
+`tensor_parser` is MIT licensed and can be found on
+[GitHub](https://github.com/frostt-tensor/tensor_parser).
 
 
 ## Tensor Submission
