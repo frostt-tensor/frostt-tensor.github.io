@@ -85,6 +85,13 @@ layout: default
   <pre>{{ page.citation }}</pre>
 {% endif %}
 
+<h3>License</h3>
+{% if page.license %}
+  {{ page.license | markdownify }}
+{% else %}
+  <strong>Unknown</strong>
+{% endif %}
+
 {{ content }}
 
 <h3 style="padding-top: 60px">Discussion</h3>
