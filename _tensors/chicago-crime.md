@@ -25,8 +25,10 @@ description: >
   Some basic sanitization efforts have been undertaken by FROSTT:
 
     * Reports without a location are omitted.
-    * The single instance of crime type `DOMESTIC VIOLENCE` has been removed.
-      All instances of domestic violence are included in `BATTERY`.
+    * A single mistake crime report (out of 6.5M total) of the secondary crime 
+      type `DOMESTIC VIOLENCE` has been moved to the primary crime type 
+      `BATTERY`.
+      Secondary crime types are sub-categories of primary crime types.
     * Instances of community area `0` are omitted (only `1`-`77` are valid).
 
 
