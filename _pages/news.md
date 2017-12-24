@@ -6,5 +6,9 @@ permalink: /news/
 # Recent News
 
 {% for post in site.posts %}
-  * {{ post.date | date_to_string }} - [{{ post.title }}]({{ post.url }})
+  {% if post.dest %}
+  * {{ post.date | date_to_string }} - [{{ post.title }}]({{ post.dest }})
+  {% else %}
+  * {{ post.date | date_to_string }} - {{ post.title }}
+  {% endif %}
 {% endfor %}
