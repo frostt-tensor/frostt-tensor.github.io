@@ -25,7 +25,7 @@ description: >
   Some basic sanitization efforts have been undertaken by FROSTT:
 
     * Reports without a location are omitted.
-    * A single mistake crime report (out of 6.5M total) of the secondary crime 
+    * A single mistaken crime report (out of 6.5M total) of the secondary crime 
       type `DOMESTIC VIOLENCE` has been moved to the primary crime type 
       `BATTERY`.
       Secondary crime types are sub-categories of primary crime types.
