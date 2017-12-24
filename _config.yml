@@ -42,8 +42,8 @@ navbar_pages:
   Main: "/"
   News: "/news/"
   Tensors: "/tensors/"
+  Tools: "https://github.com/frostt-tensor"
   Contribute: "/contribute/"
-  GitHub: "https://github.com/frostt-tensor"
 
 show_downloads: false
 google_analytics: UA-90336800-1
