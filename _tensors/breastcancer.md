@@ -10,9 +10,9 @@ description: >
   
 
 order: '3'
-nnz: '3,818,115'
-dims: ['64,812', '3,720,298', '2,524,372']
-density: '6.273e-12'
+nnz: '3,808,054'
+dims: ['64,812', '125,915', '2,524,372']
+density: '1.848e-10'
 files:
  - ["https://drive.google.com/file/d/12kbY95MMMZAUkSLY8sotnWcK15StNZR7/view?usp=sharing", BreastCancer tensor]
   
@@ -28,5 +28,9 @@ citation: >
 tags: [counts, text]
 
 license: >
+  [Breastcancer.org](http://www.breastcancer.org/about_us/bco_commitment/legal_terms)
+
+
+  *This data is only used for research purpose, with permission from Breastcancer.org. You can only download this data for your personal use and non-commercial purpose. Refer to [Breastcancer.org](http://www.breastcancer.org/about_us/bco_commitment/legal_terms) for detailed policy.*
 
 ---
