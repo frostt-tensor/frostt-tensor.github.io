@@ -9,6 +9,7 @@ description: >
 order: '3'
 nnz: '100'
 dims: ['7', '7', '7']
+density: '1.0e-2'
 
 # Each entry is a list ["URL", "description"]
 files:
@@ -29,5 +30,9 @@ citation: >
 
 # Where to file the tensor?
 tags: [tag1, tag2]
+
+# Please add data license here if necessary. (Please make sure of data distribution policy before share it.)
+
+license: >
 
 ---

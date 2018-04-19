@@ -2,13 +2,11 @@
 title: Breast Cancer Community
 
 description: >
-  Breast cancer community posts from [Breastcancer](http://www.breastcancer.org/) and collected by
-  [Zhijun Yin](https://www.linkedin.com/in/zjyin/). The modes represent
-  *author-post-time*, and each non-zero is the number of times a word appears
-  in a given post.
+  Breast cancer community posts in 4996 days (~13 years) from [Breastcancer](http://www.breastcancer.org/) are collected by
+  [Zhijun Yin](https://www.linkedin.com/in/zjyin/). We converted the data to a tensor with the modes *author-topic-time*, where *time* is shown in minutes. Non-zeros are the number of posts of an author in a particular topic within 60 seconds.
   
   
-  Please note that we cannot release the mappings for this dataset due to the patient information protection. It is provided as a peformance benchmark.
+  Please note that we cannot release the mappings of this data due to the patient information protection. This data is provided as a peformance benchmark only.
   
 
 order: '3'
@@ -16,7 +14,7 @@ nnz: '3,818,115'
 dims: ['64,812', '3,720,298', '2,524,372']
 density: '6.273e-12'
 files:
- - ["breastcancer/breastcancer.tns.gz", BreastCancer tensor]
+ - ["https://drive.google.com/file/d/12kbY95MMMZAUkSLY8sotnWcK15StNZR7/view?usp=sharing", BreastCancer tensor]
   
 citation: >
   @inproceedings{zyin2017,
@@ -28,5 +26,7 @@ citation: >
   }
 
 tags: [counts, text]
+
+license: >
 
 ---
