@@ -3,18 +3,20 @@ title: Breast Cancer Community
 
 description: >
   Breast cancer community posts in 4996 days (~13 years) from [Breastcancer](http://www.breastcancer.org/) are collected by
-  [Zhijun Yin](https://www.linkedin.com/in/zjyin/). We converted the data to a tensor with the modes *author-topic-time*, where *time* is shown in minutes. Non-zeros are the number of posts of an author in a particular topic within 60 seconds.
+  [Zhijun Yin](https://www.linkedin.com/in/zjyin/). We converted the data to a tensor with the modes *author-topic-time*, where *time* is shown in days. Non-zeros are the number of posts of an author in a particular topic within 60 seconds.
   
   
   Please note that we cannot release the mappings of this data due to the patient information protection. This data is provided as a peformance benchmark only.
   
 
 order: '3'
-nnz: '3,808,054'
-dims: ['64,812', '125,915', '2,524,372']
-density: '1.848e-10'
+nnz: '2,667,906'
+dims: ['64,812', '125,915', '4,763']
+density: '6.864e-08'
 files:
- - ["https://drive.google.com/file/d/12kbY95MMMZAUkSLY8sotnWcK15StNZR7/view?usp=sharing", BreastCancer tensor]
+ - ["https://drive.google.com/file/d/1lRrCDmfuHN8HXx5ZqSOU4DGwcxlYgFwR/view?usp=sharing", Tensor]
+ - ["https://drive.google.com/file/d/1x3qZGU7gfO_ssQzu3yKdzVwqhMsMYOYS/view?usp=sharing", Topic]
+ - ["https://drive.google.com/file/d/1XENZKYYsxLRG8RkJIhXA7lVTVe6TqaeA/view?usp=sharing", Time (days)]
   
 citation: >
   @inproceedings{zyin2017,
