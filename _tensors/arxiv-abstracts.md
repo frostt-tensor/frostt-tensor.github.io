@@ -18,8 +18,9 @@ dims: ['419','172','24558']
 
 # Each entry is a list ["URL", "description"]
 files:
- - Will be provided
- #["http://www-users.cs.umn.edu/~shaden/frostt_data/amazon/amazon-reviews.tns.gz", Amazon-Reviews tensor]
+ - ["arxiv_abstracts.tns.bz2", arXiv count tensor]
+ - ["categories.csv", Mapping of paper categories to indices]
+ - ["topTermsAbstract.csv", Mapping of unique words to indices]
 
 
 # bibtex citation
