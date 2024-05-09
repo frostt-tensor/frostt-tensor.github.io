@@ -5,17 +5,16 @@ description: >
   Abstracts published on [arxiv.org](https://arxiv.org) from 1986 to
   2021 as collected by
   [Kaggle](https://www.kaggle.com/datasets/Cornell-University/arxiv).
-  The modes of the tensor are paper categories (e.g., cs.LG:Machine Learning),
-  unique words appearing across the corpus of abstracts, and publication month,
-  counting from the first paper.  Unique words were constructed by [Spacy's
-  English Core parser](https://spacy.io/models/en).  Tensor entries are
-  the number of times a given word appears across all of the abstracts
+  The modes of the tensor are publication month
+  counting from the first paper, paper categories (e.g., cs.LG:Machine Learning), and
+  unique words appearing across the corpus of abstracts.  Unique words were constructed by [Spacy's English Core parser](https://spacy.io/models/en).  Tensor entries are
+  the number of times a given word appears across all of the abstracts published in the given month
   for the given paper category.
 
 # Tensor statistics
 order: '3'
 nnz: '30408611'
-dims: ['172', '24558', '300']
+dims: ['419','172','24558']
 
 # Each entry is a list ["URL", "description"]
 files:
