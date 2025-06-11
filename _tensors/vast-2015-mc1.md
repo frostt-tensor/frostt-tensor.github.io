@@ -16,13 +16,13 @@ dims: ['165,427','11,374','2','100','89']
 
 
 files:
- - ["vast-2015-mc1/vast-2015-mc1-5d.tns.gz", Tensor]
- - ["vast-2015-mc1/vast-2015-mc1-3d.tns.gz", Tensor with fourth and fifth modes removed]
- - ["vast-2015-mc1/mode-1-times.map.gz", Timestamps]
- - ["vast-2015-mc1/mode-2-persons.map.gz", Person IDs]
- - ["vast-2015-mc1/mode-3-actions.map.gz", Actions]
- - ["vast-2015-mc1/mode-4-xlocs.map.gz", X coordinates]
- - ["vast-2015-mc1/mode-5-ylocs.map.gz", Y coordinates]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/vast-2015-mc1/vast-2015-mc1-5d.tns.gz", Tensor]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/vast-2015-mc1/vast-2015-mc1-3d.tns.gz", Tensor with fourth and fifth modes removed]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/vast-2015-mc1/mode-1-times.map.gz", Timestamps]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/vast-2015-mc1/mode-2-persons.map.gz", Person IDs]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/vast-2015-mc1/mode-3-actions.map.gz", Actions]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/vast-2015-mc1/mode-4-xlocs.map.gz", X coordinates]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/vast-2015-mc1/mode-5-ylocs.map.gz", Y coordinates]
 
 
 citation: >

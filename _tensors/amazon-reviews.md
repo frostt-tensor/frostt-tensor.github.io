@@ -18,7 +18,7 @@ nnz: '1,741,809,018'
 dims: ['4,821,207', '1,774,269', '1,805,187']
 density: '1.128e-10'
 files:
- - ["amazon/amazon-reviews.tns.gz", Amazon-Reviews tensor]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/amazon/amazon-reviews.tns.gz", Amazon-Reviews tensor]
 
 
 citation: >

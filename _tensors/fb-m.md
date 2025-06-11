@@ -14,9 +14,9 @@ dims: ['23,344,784', '23,344,784', '166']
 density: '1.100e-9'
 
 files:
- - ["FB-M/fb-m.tns.gz", Freebase Music tensor]
- - ["FB-M/freebase_music_entity.dic.gz", Entity dictionary]
- - ["FB-M/freebase_music_relation.dic.gz", Relation dictionary]
+ - ["https://frostt-tensors.s3.us-east-2.amazonaws.com/FB-M/fb-m.tns.gz", Freebase Music tensor]
+ - ["https://frostt-tensors.s3.us-east-2.amazonaws.com/FB-M/freebase_music_entity.dic.gz", Entity dictionary]
+ - ["https://frostt-tensors.s3.us-east-2.amazonaws.com/FB-M/freebase_music_relation.dic.gz", Relation dictionary]
 
 
 citation: >

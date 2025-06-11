@@ -20,10 +20,10 @@ dims: ['46', '239,172', '239,172']
 
 # Each entry is a list ["URL", "description"]
 files:
- - ["patents/patents.tns.gz", Tensor]
- - ["patents/mode-1-years.map.gz", Years]
- - ["patents/mode-2-terms.map.gz", Terms]
- - ["patents/mode-3-terms.map.gz", Terms]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/patents/patents.tns.gz", Tensor]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/patents/mode-1-years.map.gz", Years]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/patents/mode-2-terms.map.gz", Terms]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/patents/mode-3-terms.map.gz", Terms]
 
 
 # bibtex citation

@@ -16,11 +16,11 @@ dims: ['6,066', '5,699', '244,268', '1,176']
 
 # Each entry is a list ["URL", "description"]
 files:
- - ["enron/enron.tns.gz", Enron tensor]
- - ["enron/mode-1-senders.map.gz", Sender emails]
- - ["enron/mode-2-receivers.map.gz", Receiver emails]
- - ["enron/mode-3-words.map.gz", Words]
- - ["enron/mode-4-dates.map.gz", Dates]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/enron/enron.tns.gz", Enron tensor]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/enron/mode-1-senders.map.gz", Sender emails]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/enron/mode-2-receivers.map.gz", Receiver emails]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/enron/mode-3-words.map.gz", Words]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/enron/mode-4-dates.map.gz", Dates]
 
 
 # bibtex citation

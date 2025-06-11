@@ -14,12 +14,12 @@ dims: ['3,761', '11,154', '8,711', '75,147', '9']
 density: '2.795e-10'
 
 files:
- - ["LANL2/lanl2.tns.gz", LANL2 NetFlow tensor]
- - ["LANL2/map_mode_0.map.gz", Timestamp]
- - ["LANL2/map_mode_1.map.gz", Source device]
- - ["LANL2/map_mode_2.map.gz", Destination device]
- - ["LANL2/map_mode_3.map.gz", Destination port]
- - ["LANL2/map_mode_4.map.gz", Bytes transferred]
+ - ["https://frostt-tensors.s3.us-east-2.amazonaws.com/LANL2/lanl2.tns.gz", LANL2 NetFlow tensor]
+ - ["https://frostt-tensors.s3.us-east-2.amazonaws.com/LANL2/map_mode_0.map.gz", Timestamp]
+ - ["https://frostt-tensors.s3.us-east-2.amazonaws.com/LANL2/map_mode_1.map.gz", Source device]
+ - ["https://frostt-tensors.s3.us-east-2.amazonaws.com/LANL2/map_mode_2.map.gz", Destination device]
+ - ["https://frostt-tensors.s3.us-east-2.amazonaws.com/LANL2/map_mode_3.map.gz", Destination port]
+ - ["https://frostt-tensors.s3.us-east-2.amazonaws.com/LANL2/map_mode_4.map.gz", Bytes transferred]
 
 
 citation: >
