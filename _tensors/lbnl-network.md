@@ -17,12 +17,12 @@ density: '4.230708e-14'
 
 # Each entry is a list ["URL", "description"]
 files:
- - ["lbnl-network/lbnl-network.tns.gz", Tensor]
- - ["lbnl-network/mode-1-send_ips.map.gz", Sender IP addresses]
- - ["lbnl-network/mode-2-send_ports.map.gz", Sender ports]
- - ["lbnl-network/mode-3-dest_ips.map.gz", Destination IP addresses]
- - ["lbnl-network/mode-4-dest_ports.map.gz", Destination ports]
- - ["lbnl-network/mode-5-times.map.gz", Time IDs, in seconds.]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/lbnl-network/lbnl-network.tns.gz", Tensor]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/lbnl-network/mode-1-send_ips.map.gz", Sender IP addresses]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/lbnl-network/mode-2-send_ports.map.gz", Sender ports]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/lbnl-network/mode-3-dest_ips.map.gz", Destination IP addresses]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/lbnl-network/mode-4-dest_ports.map.gz", Destination ports]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/lbnl-network/mode-5-times.map.gz", Time IDs, in seconds.]
 
 
 # bibtex citation

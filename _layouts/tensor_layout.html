@@ -73,7 +73,7 @@ layout: default
   {% for file in page.files %}
   <tr>
     {% assign fname = file[0] | split: "/" %}
-    <td> <a href="{{site.datahost_base}}/{{file[0]}}">{{ fname.last }}</a></td>
+    <td> <a href="{{file[0]}}">{{ fname.last }}</a></td>
     <td> {{ file[1] }} </td>
   </tr>
   {% endfor %}

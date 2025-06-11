@@ -19,11 +19,11 @@ density: '3.849671e-04'
 
 # Each entry is a list ["URL", "description"]
 files:
- - ["uber-pickups/uber.tns.gz", Tensor]
- - ["uber-pickups/mode-1-dates.map.gz", Date of pickup]
- - ["uber-pickups/mode-2-hours.map.gz", Hour of pickup (0-23)]
- - ["uber-pickups/mode-3-latitudes.map.gz", Latitude of pickup]
- - ["uber-pickups/mode-4-longitudes.map.gz", Longitude of pickup]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/uber-pickups/uber.tns.gz", Tensor]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/uber-pickups/mode-1-dates.map.gz", Date of pickup]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/uber-pickups/mode-2-hours.map.gz", Hour of pickup (0-23)]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/uber-pickups/mode-3-latitudes.map.gz", Latitude of pickup]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/uber-pickups/mode-4-longitudes.map.gz", Longitude of pickup]
 
 
 tags: [counts, geographical]

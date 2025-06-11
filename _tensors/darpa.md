@@ -12,11 +12,11 @@ dims: ['22,476', '22,476', '23,776,223']
 density: '2.367e-9'
 
 files:
- - ["1998DARPA/1998darpa.tns.gz", DARPA tensor]
- - ["1998DARPA/1998darpa_labeled.tensor.gz", DARPA tensor with labels]
- - ["1998DARPA/ip_dic.gz", IP address dictionary]
- - ["1998DARPA/port_dic.gz", Port dictionary]
- - ["1998DARPA/time_dic.gz", Time dictionary]
+ - ["https://frostt-tensors.s3.us-east-2.amazonaws.com/1998DARPA/1998darpa.tns.gz", DARPA tensor]
+ - ["https://frostt-tensors.s3.us-east-2.amazonaws.com/1998DARPA/1998darpa_labeled.tensor.gz", DARPA tensor with labels]
+ - ["https://frostt-tensors.s3.us-east-2.amazonaws.com/1998DARPA/ip_dic.gz", IP address dictionary]
+ - ["https://frostt-tensors.s3.us-east-2.amazonaws.com/1998DARPA/port_dic.gz", Port dictionary]
+ - ["https://frostt-tensors.s3.us-east-2.amazonaws.com/1998DARPA/time_dic.gz", Time dictionary]
 
 
 citation: >

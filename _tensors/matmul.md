@@ -31,14 +31,14 @@ nnz: 'M*K*N'
 dims: ['M*K', 'K*N', 'M*N']
 density: '1/(M*N*K)'
 files:
- - ["matrix-multiplication/matmul_2-2-2.tns.gz", Tensor]
- - ["matrix-multiplication/matmul_3-3-3.tns.gz", Tensor]
- - ["matrix-multiplication/matmul_4-3-2.tns.gz", Tensor]
- - ["matrix-multiplication/matmul_4-4-3.tns.gz", Tensor]
- - ["matrix-multiplication/matmul_4-4-4.tns.gz", Tensor]
- - ["matrix-multiplication/matmul_5-5-5.tns.gz", Tensor]
- - ["matrix-multiplication/matmul_6-3-3.tns.gz", Tensor]
- - ["matrix-multiplication/matmul_generator.m", Tensor generator (Matlab)]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/matrix-multiplication/matmul_2-2-2.tns.gz", Tensor]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/matrix-multiplication/matmul_3-3-3.tns.gz", Tensor]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/matrix-multiplication/matmul_4-3-2.tns.gz", Tensor]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/matrix-multiplication/matmul_4-4-3.tns.gz", Tensor]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/matrix-multiplication/matmul_4-4-4.tns.gz", Tensor]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/matrix-multiplication/matmul_5-5-5.tns.gz", Tensor]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/matrix-multiplication/matmul_6-3-3.tns.gz", Tensor]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/matrix-multiplication/matmul_generator.m", Tensor generator (Matlab)]
 
 
 citation: >

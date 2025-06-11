@@ -16,7 +16,7 @@ nnz: '143,599,552'
 dims: ['2,902,330', '2,143,368', '25,495,389']
 density: '9.054e-13'
 files:
- - ["nell/nell-1.tns.gz", NELL-1 tensor]
+ - ["https://s3.us-east-2.amazonaws.com/frostt/frostt_data/nell/nell-1.tns.gz", NELL-1 tensor]
 
 
 citation: >
